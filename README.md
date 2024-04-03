@@ -23,15 +23,11 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
 
    git clone https://github.com/MrLately/setup_nas_raid_1
 
- 4. **Make the Script Executable**:
-
-    chmod +x setup_nas.sh
-
-5. **Make the Script Executable**:
+4. **Make the Script Executable**:
 
    chmod +x setup_nas.sh
 
-6. **Run the Script**:
+5. **Run the Script**:
 
    sudo ./setup_nas.sh
    
