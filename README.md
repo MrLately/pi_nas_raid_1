@@ -20,6 +20,7 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
 2. **Connect Your Drives**: Connect the two external drives to your Raspberry Pi. These will be used for the RAID 1 array.
 
 3. **Download the Script**: Clone the script from GitHub to your Raspberry Pi.
+
    git clone https://github.com/MrLately/setup_nas_raid_1
    cd setup_nas_raid_1
 
@@ -28,6 +29,7 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
 
 5. **Run the Script**:
    sudo ./setup_nas.sh
+   
    Follow the on-screen instructions to select your drives and confirm the setup steps.
 
 ## Usage
