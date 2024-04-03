@@ -22,12 +22,17 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
 3. **Download the Script**: Clone the script from GitHub to your Raspberry Pi.
 
    git clone https://github.com/MrLately/setup_nas_raid_1
-   cd setup_nas_raid_1
 
-4. **Make the Script Executable**:
+ 4. **Make the Script Executable**:
+
    chmod +x setup_nas.sh
 
-5. **Run the Script**:
+5. **Make the Script Executable**:
+
+   chmod +x setup_nas.sh
+
+6. **Run the Script**:
+
    sudo ./setup_nas.sh
    
    Follow the on-screen instructions to select your drives and confirm the setup steps.
@@ -45,5 +50,6 @@ Once the script completes, your NAS will be accessible over the network via the 
 - **Data Loss Warning**: The script will format the drives selected for the RAID 1 array, erasing all existing data. Ensure you have backups of any important data before proceeding.
 - **Drive Failure**: In case of a drive failure, replace the failed drive with a new one and add it to the RAID array to rebuild the mirror.
 - **Customization**: Advanced users can modify the script to change the mount point, share name, or RAID device name as needed.
+
 
 
