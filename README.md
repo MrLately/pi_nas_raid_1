@@ -25,7 +25,7 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
 
  4. **Make the Script Executable**:
 
-   chmod +x setup_nas.sh
+    chmod +x setup_nas.sh
 
 5. **Make the Script Executable**:
 
