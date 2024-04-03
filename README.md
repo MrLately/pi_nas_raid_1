@@ -12,7 +12,6 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
 
 - **RAID 1 Configuration**: Mirrors data across two drives for redundancy.
 - **Samba File Sharing**: Shares the RAID array over the network, making it accessible to Windows, macOS, and Linux clients.
-- **Automatic Updates**: Updates and upgrades Raspberry Pi OS to ensure the latest software and security patches.
 
 ## Setup Instructions
 
@@ -43,6 +42,3 @@ Once the script completes, your NAS will be accessible over the network via the 
 - **Drive Failure**: In case of a drive failure, replace the failed drive with a new one and add it to the RAID array to rebuild the mirror.
 - **Customization**: Advanced users can modify the script to change the mount point, share name, or RAID device name as needed.
 
-## Support
-
-This script is provided as-is, without warranty. If you encounter issues or need help, please refer to the Raspberry Pi forums and the online documentation for mdadm and Samba.
