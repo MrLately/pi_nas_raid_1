@@ -48,7 +48,8 @@ Once the script completes, your NAS will be accessible over the network via the 
 
 - **Data Loss Warning**: The script will format the drives selected for the RAID 1 array, erasing all existing data. Ensure you have backups of any important data before proceeding.
 - **Drive Failure**: In case of a drive failure, replace the failed drive with a new one and add it to the RAID array to rebuild the mirror.
-- **Customization**: Advanced users can modify the script to change the mount point, share name, or RAID device name as needed.
+- **Customization**: Advanced users can modify the script to change the mount point, share name, or RAID device name as needed. Can password protect as well but this
+default setup is for easy access within the home network.
 
 
 
