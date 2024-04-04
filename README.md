@@ -33,6 +33,12 @@ This script automates the setup of a Network Attached Storage (NAS) on a Raspber
    
    Follow the on-screen instructions to select your drives and confirm the setup steps.
 
+## Important Notes
+
+- **Data Loss Warning**: The script will format the drives selected for the RAID 1 array, erasing all existing data. Ensure you have backups of any important data before proceeding.
+- **Drive Failure**: In case of a drive failure, replace the failed drive with a new one and add it to the RAID array to rebuild the mirror.
+- **Customization**: Advanced users can modify the script to change the mount point, share name, or RAID device name as needed.
+
 ## Usage
 
 Once the script completes, your NAS will be accessible over the network via the Samba protocol. You can access the shared folder from any computer on the same network:
@@ -40,12 +46,11 @@ Once the script completes, your NAS will be accessible over the network via the 
 - **Windows**: Use the network browser or enter \\RASPBERRY_PI_IP\nas in the File Explorer address bar.
 - **macOS**: Connect to a server via Finder using smb://RASPBERRY_PI_IP/nas.
 - **Linux**: Access through the file manager or mount the share using the command line.
-
-## Important Notes
-
-- **Data Loss Warning**: The script will format the drives selected for the RAID 1 array, erasing all existing data. Ensure you have backups of any important data before proceeding.
-- **Drive Failure**: In case of a drive failure, replace the failed drive with a new one and add it to the RAID array to rebuild the mirror.
-- **Customization**: Advanced users can modify the script to change the mount point, share name, or RAID device name as needed.
+- **Android**:
+- **Iphone**:
+![Screenshot_20240404_091939_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/d66a1a21-84a4-4df8-a172-3b09ef862cad)
+![Screenshot_20240404_091332_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/e2dcd78d-0c12-4d7b-824b-28db5e53cb32)
+![Screenshot_20240404_091323_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/88ebde58-ef14-46d9-8407-490d80609bff)
 
 
 
