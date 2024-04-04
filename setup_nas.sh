@@ -62,6 +62,12 @@ echo "UUID=$UUID $MOUNT_POINT ext4 defaults,auto,users,rw,nofail 0 0" >> /etc/fs
 echo "Mounting the RAID array..."
 mount -a
 
+# Set correct ownership and permissions for the NAS directory.
+# This ensures that the directory is accessible to the user and group specified.
+echo "Setting ownership and permissions for $MOUNT_POINT..."
+chown -R $USER_NAME:$GROUP_NAME $MOUNT_POINT
+chmod -R 775 $MOUNT_POINT
+
 # Install Samba for file sharing
 echo "Installing Samba..."
 apt-get install samba samba-common-bin -y
@@ -87,3 +93,7 @@ echo "Restarting Samba..."
 systemctl restart smbd
 
 echo "NAS setup with RAID 1 and Samba configuration completed."
+
+# Display the IP address of the Raspberry Pi
+RPI_IP=$(hostname -I | awk '{print $1}')
+echo "Raspberry Pi IP Address: $RPI_IP"
