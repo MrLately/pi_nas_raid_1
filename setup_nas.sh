@@ -60,6 +60,22 @@ if [ "$confirm" != "y" ]; then
     exit 1
 fi
 
+# Unmount the devices if they are mounted
+echo "Checking if $FIRST_DEVICE or $SECOND_DEVICE are mounted..."
+umount $FIRST_DEVICE 2>/dev/null
+umount $SECOND_DEVICE 2>/dev/null
+echo "Devices unmounted if they were mounted."
+
+# Stop any existing RAID arrays that include the specified devices
+mdadm --stop $FIRST_DEVICE 2>/dev/null
+mdadm --stop $SECOND_DEVICE 2>/dev/null
+echo "Existing RAID arrays stopped if they existed."
+
+# Zero out superblocks to ensure the drives are clean
+mdadm --zero-superblock $FIRST_DEVICE 2>/dev/null
+mdadm --zero-superblock $SECOND_DEVICE 2>/dev/null
+echo "Superblocks cleared if they existed."
+
 # Create the RAID 1 array
 echo "Creating RAID 1 array..."
 if mdadm --create --verbose $RAID_DEVICE --level=1 --raid-devices=2 $FIRST_DEVICE $SECOND_DEVICE; then
