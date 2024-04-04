@@ -48,7 +48,11 @@ Once the script completes, your NAS will be accessible over the network via the 
 - **Linux**: Access through the file manager or mount the share using the command line.
 - **Android**:
 - **Iphone**:
-![Screenshot_20240404_091939_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/d66a1a21-84a4-4df8-a172-3b09ef862cad)
+
+
+![Screenshot_20240404_091323_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/14f20015-a7cd-45fb-af5b-d066b2434ae4)
+
+![Screenshot_20240404_091939_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/4e379260-8868-49b8-9d4d-df96cb4d1291)
 
 
 
