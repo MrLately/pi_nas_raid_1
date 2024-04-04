@@ -49,8 +49,7 @@ Once the script completes, your NAS will be accessible over the network via the 
 - **Android**:
 - **Iphone**:
 ![Screenshot_20240404_091939_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/d66a1a21-84a4-4df8-a172-3b09ef862cad)
-![Screenshot_20240404_091332_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/e2dcd78d-0c12-4d7b-824b-28db5e53cb32)
-![Screenshot_20240404_091323_My Files](https://github.com/MrLately/setup_nas_raid_1/assets/94589563/88ebde58-ef14-46d9-8407-490d80609bff)
+
 
 
 
